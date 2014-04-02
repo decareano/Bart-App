@@ -4,6 +4,8 @@ class CreateUsers < ActiveRecord::Migration
       t.string :phone_number, null: false
       t.string :name, null: false
       t.string :session_token
+      t.string :email
+      t.string :login
 
       t.timestamps
     end

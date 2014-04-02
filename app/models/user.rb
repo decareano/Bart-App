@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  attr_accessible :name, :phone_number, :email
+  attr_accessible :name, :phone_number, :email, :login
   
   validates :name, presence: true,
                    length: { maximum: 12 }
